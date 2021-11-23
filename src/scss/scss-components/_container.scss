@@ -1,0 +1,30 @@
+.wrapper {
+    min-height: $fullscreen;
+    display: flex;
+    flex-direction: column;
+}
+
+.fullscreen {
+    min-height: $fullscreen;
+    display: flex;  
+    padding: 30px 0; 
+}
+
+.container {
+    width: 100%;
+    max-width: 1072px;
+    margin: 0 auto; 
+    background: url('../img/background_rectangles.png');
+    display: flex;  
+    background-color: #FF7F6D; 
+    border-radius: $full-border-radius;
+}
+
+.content-container {
+    flex: 1 1 auto;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto; 
+    display: flex;
+    flex-direction: column;    
+}

@@ -1,0 +1,28 @@
+<section class="expenses">
+    <h2 class="second__title">My <span class="second__title_red">Expenses</span></h2>
+
+    <div class="expenses-wrapper">
+        <div class="expenses-container__left">
+            @@include('_expenses-component.html')           
+
+            @@include('_table-component.html')
+
+            <div class="table__buttons">
+                <button class="button button_small">
+                    <p>Show all products</p>
+                </button>
+                <button class="button button_small button_inverted-gradient">
+                    <p>Show all
+                        categories</p>
+                </button>
+            </div>
+        </div>
+
+        <div class="expenses-container__right">
+            <div class="expenses__img-container">
+                <img src="./img/expenses_img.png" alt="expenses_img" class="expenses__img">
+            </div>
+            <h2 class="second__title second__title_grey">EXPENSES<br>27/100%</h2>
+        </div>
+    </div>
+</section>

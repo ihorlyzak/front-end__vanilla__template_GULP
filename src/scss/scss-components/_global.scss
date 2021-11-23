@@ -1,0 +1,17 @@
+body {
+    height: 100%;
+    font: {
+        family: 'Roboto', sans-serif;
+        size: 16px;
+    }
+    color: $color-black;
+    background-color: #B4A2FD;
+}
+
+h1, h2, h3, h4 {
+    font: {
+        family: 'Montserrat', sans-serif;
+        weight: bold;  
+    }
+}
+

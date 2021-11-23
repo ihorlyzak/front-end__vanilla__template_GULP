@@ -1,0 +1,43 @@
+@import 'base/reset';
+@import 'base/fonts';
+@import 'base/variables';
+@import 'base/mixins';
+
+
+@import 'scss-components/global';
+//! body, h
+
+@import 'scss-components/container';
+//! wrapper, fullscreen, container, content-container
+
+@import 'scss-components/left-aside';
+// ? scroll aside
+
+@import 'scss-components/right-aside';
+//? right aside
+
+@import 'scss-components/logo';
+// * logo 
+
+@import 'scss-components/title';
+// * title 
+
+@import 'scss-components/header';
+// ? header
+
+@import 'scss-components/introduction-section';
+// ? introduction-section
+
+@import 'scss-components/platforms-section';
+// ? platforms-section
+
+@import 'scss-components/buttons';
+// * buttons
+
+@import 'scss-components/expenses-section';
+// ? expenses-section
+
+@import 'scss-components/table';
+// ? table-section
+
+

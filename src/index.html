@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Count</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link href="/fonts/fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+
+
+        <!-- ! 1 FRAME -->
+
+
+        <div class="fullscreen">
+
+            <div class="container">
+
+                @@include('_left-aside.html')
+
+                <div class="content-container">
+
+                    @@include('_header.html')
+
+                    <main>
+
+                        @@include('_introduction-section.html')
+
+                        @@include('_platforms-section.html')
+
+                        <!-- !for js func -->
+                        <!-- <div class="button-container" data-arrows="down"></div> -->
+
+                        <!-- delete -->
+                        <div class="button-container">
+                            <a href="#">
+                                <div class="arrow-down">
+                                    <i class="fas fa-long-arrow-alt-down"></i>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="arrow-right">
+                                    <i class="fas fa-long-arrow-alt-right"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- delete -->
+
+
+                </div>
+
+                @@include('_right-aside.html')
+
+            </div>
+        </div>
+
+
+        <!-- ! 1 FRAME -->
+
+        <!-- ? EXPENSES FRAME -->
+
+
+        <div class="fullscreen">
+
+            <div class="container">
+
+                @@include('_left-aside.html')
+
+                <div class="content-container">
+
+                    <!-- delete -->
+
+                    <div class="button-container">
+                        <a href="#">
+                            <div class="arrow-up">
+                                <i class="fas fa-long-arrow-alt-up"></i>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- delete -->
+
+                    @@include('_expenses-section.html')
+
+                    <!-- !for js func -->
+                    <!-- <div class="button-container" data-arrows="down"></div> -->
+
+                    <!-- delete -->
+
+                    <div class="button-container">
+                        <a href="#">
+                            <div class="arrow-down">
+                                <i class="fas fa-long-arrow-alt-down"></i>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- delete -->
+
+                </div>  
+
+                @@include('_right-aside.html')
+
+
+                <!-- ? EXPENSES FRAME -->
+
+
+                </main>
+            </div>
+        </div>
+        <script src="js/script.min.js"></script>
+</body>
+
+</html>
+
+<!--! <script>
+    const arrowController = document.querySelectorAll('.button-container');
+
+    arrowController.forEach((node) => {
+        const nodeAtributeValue = node.attributes["data-arrows"].value;
+        const splitedNodeAtributeValue = nodeAtributeValue.split("-");
+
+        const aTag = document.createElement("a");
+        const divTag = document.createElement("div");
+        const iTag = document.createElement("i");
+
+        divTag.classList.add(`arrow-${nodeAtributeValue}`);
+        iTag.classList.add("fas");
+        iTag.classList.add(`fa-long-arrow-alt-${nodeAtributeValue}`);
+
+        aTag.href = "#";
+
+        divTag.appendChild(iTag);
+        aTag.appendChild(divTag);
+
+        node.appendChild(aTag);
+    })
+
+</script> -->
